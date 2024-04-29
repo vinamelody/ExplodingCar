@@ -27,7 +27,9 @@ struct ImmersiveView: View {
 
                 if let car {
                     // Position
-                    car.position = [0, 0, -1]
+                    car.position = [0, 0, -1.5]
+                    car.transform.rotation *= simd_quatf(angle: .pi / 2,        // 90 degrees
+                                                            axis: SIMD3<Float>(0, 1, 0))
 
                     // Lighting
                     car.components.set(ImageBasedLightComponent(source: .single(environment)))
@@ -47,7 +49,7 @@ struct ImmersiveView: View {
                     // Animation
                     animation = car.availableAnimations[0]
                     if let animation {
-                        animationController = car.playAnimation(animation, separateAnimatedValue: true, startsPaused: true)
+                        animationController = car.playAnimation(animation, separateAnimatedValue: false, startsPaused: true)
                         animationDuration = animationController?.duration ?? 0.0
                         print("vvv \(animationDuration)")
                     }
