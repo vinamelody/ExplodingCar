@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A8F13922BD7F8CA0098451C /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 5A8F13912BD7F8CA0098451C /* RealityKitContent */; };
 		5A8F13942BD7F8CA0098451C /* ExplodingCarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8F13932BD7F8CA0098451C /* ExplodingCarApp.swift */; };
-		5A8F13962BD7F8CA0098451C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8F13952BD7F8CA0098451C /* ContentView.swift */; };
-		5A8F13982BD7F8CA0098451C /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8F13972BD7F8CA0098451C /* ImmersiveView.swift */; };
 		5A8F139A2BD7F8CA0098451C /* ImageBasedLighting.skybox in Resources */ = {isa = PBXBuildFile; fileRef = 5A8F13992BD7F8CA0098451C /* ImageBasedLighting.skybox */; };
 		5A8F139C2BD7F8CB0098451C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A8F139B2BD7F8CB0098451C /* Assets.xcassets */; };
 		5A8F139F2BD7F8CB0098451C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A8F139E2BD7F8CB0098451C /* Preview Assets.xcassets */; };
 		5A8F13AA2BD7F8CB0098451C /* ExplodingCarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8F13A92BD7F8CB0098451C /* ExplodingCarTests.swift */; };
+		5A8F13B42BD7FA010098451C /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8F13B32BD7FA010098451C /* ImmersiveView.swift */; };
+		5A8F13B62BD7FA6E0098451C /* car.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A8F13B52BD7FA6D0098451C /* car.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,16 +28,15 @@
 
 /* Begin PBXFileReference section */
 		5A8F138C2BD7F8CA0098451C /* ExplodingCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExplodingCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A8F13902BD7F8CA0098451C /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		5A8F13932BD7F8CA0098451C /* ExplodingCarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplodingCarApp.swift; sourceTree = "<group>"; };
-		5A8F13952BD7F8CA0098451C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		5A8F13972BD7F8CA0098451C /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
 		5A8F13992BD7F8CA0098451C /* ImageBasedLighting.skybox */ = {isa = PBXFileReference; lastKnownFileType = file.skybox; path = ImageBasedLighting.skybox; sourceTree = "<group>"; };
 		5A8F139B2BD7F8CB0098451C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A8F139E2BD7F8CB0098451C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5A8F13A02BD7F8CB0098451C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A8F13A52BD7F8CB0098451C /* ExplodingCarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExplodingCarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A8F13A92BD7F8CB0098451C /* ExplodingCarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplodingCarTests.swift; sourceTree = "<group>"; };
+		5A8F13B32BD7FA010098451C /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
+		5A8F13B52BD7FA6D0098451C /* car.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = car.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +44,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A8F13922BD7F8CA0098451C /* RealityKitContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,8 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				5A8F13932BD7F8CA0098451C /* ExplodingCarApp.swift */,
-				5A8F13952BD7F8CA0098451C /* ContentView.swift */,
-				5A8F13972BD7F8CA0098451C /* ImmersiveView.swift */,
+				5A8F13B32BD7FA010098451C /* ImmersiveView.swift */,
+				5A8F13B52BD7FA6D0098451C /* car.usdz */,
 				5A8F13992BD7F8CA0098451C /* ImageBasedLighting.skybox */,
 				5A8F139B2BD7F8CB0098451C /* Assets.xcassets */,
 				5A8F13A02BD7F8CB0098451C /* Info.plist */,
@@ -96,7 +93,6 @@
 		5A8F138F2BD7F8CA0098451C /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				5A8F13902BD7F8CA0098451C /* RealityKitContent */,
 			);
 			path = Packages;
 			sourceTree = "<group>";
@@ -134,7 +130,6 @@
 			);
 			name = ExplodingCar;
 			packageProductDependencies = (
-				5A8F13912BD7F8CA0098451C /* RealityKitContent */,
 			);
 			productName = ExplodingCar;
 			productReference = 5A8F138C2BD7F8CA0098451C /* ExplodingCar.app */;
@@ -203,6 +198,7 @@
 			files = (
 				5A8F139C2BD7F8CB0098451C /* Assets.xcassets in Resources */,
 				5A8F139F2BD7F8CB0098451C /* Preview Assets.xcassets in Resources */,
+				5A8F13B62BD7FA6E0098451C /* car.usdz in Resources */,
 				5A8F139A2BD7F8CA0098451C /* ImageBasedLighting.skybox in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,9 +217,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A8F13962BD7F8CA0098451C /* ContentView.swift in Sources */,
+				5A8F13B42BD7FA010098451C /* ImmersiveView.swift in Sources */,
 				5A8F13942BD7F8CA0098451C /* ExplodingCarApp.swift in Sources */,
-				5A8F13982BD7F8CA0098451C /* ImmersiveView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,13 +485,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		5A8F13912BD7F8CA0098451C /* RealityKitContent */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = RealityKitContent;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5A8F13842BD7F8CA0098451C /* Project object */;
 }

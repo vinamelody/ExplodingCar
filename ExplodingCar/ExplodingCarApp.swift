@@ -9,13 +9,19 @@ import SwiftUI
 
 @main
 struct ExplodingCarApp: App {
+
+    @Environment(\.openImmersiveSpace) var openImmersiveSpace
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            EmptyView()
+                .task {
+                    await openImmersiveSpace(id: "ImmersiveSpace")
+                }
         }.windowStyle(.volumetric)
 
         ImmersiveSpace(id: "ImmersiveSpace") {
             ImmersiveView()
-        }.immersionStyle(selection: .constant(.full), in: .full)
+        }
     }
 }
